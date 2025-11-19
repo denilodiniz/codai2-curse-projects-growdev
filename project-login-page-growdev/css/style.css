@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#logo-growdev {
+    width: 250px;
+    height: 150px;
+}
+
+.background-city {
+    background: url("../image/background-city.jpg") center bottom repeat-x;
+    background-size: contain;
+}
+
+/*.card-img-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
