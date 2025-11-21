@@ -2,10 +2,15 @@
 <html lang="pt">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Nikel</title>
@@ -16,40 +21,39 @@
         <div class="container">
             <div class="row vh-100">
 
-                <!--Apresentation block-->
+                <!-- Apresentation block -->
                 <div class="col d-flex justify-content-center my-5 flex-column">
                     <div class="text-login">
                         <p>Organize suas finânças de forma fácil.</p>
                         <p>Controle seu dinheiro e investimentos.</p>
                         <p>Economize e atinja os seus objetivos.</p>
                     </div>
+
                     <div class="text-center">
-                        <img src="assets/images/pocket.png" alt="image pocket" class="img-fluid" srcset="">
-                        <img src="assets/images/coins.png" alt="image coins" class="img-fluid d-none d-md-inline coins"
-                            srcset="">
+                        <img src="assets/images/pocket.png" alt="image pocket" class="img-fluid">
+                        <img src="assets/images/coins.png" alt="image coins" class="img-fluid d-none d-md-inline coins">
                     </div>
                 </div>
 
-                <!--Form login block-->
+                <!-- Login Form Block -->
                 <div class="col d-flex justify-content-center my-5">
                     <div class="container">
 
-                        <!--Nikel logo-->
+                        <!-- Nikel logo -->
                         <div class="row">
                             <div class="col">
                                 <div class="text-center mb-3">
-                                    <img src="assets/images/nikel-logo.png" alt="image logo nikel" class="img-fluid"
-                                        srcset="">
+                                    <img src="assets/images/nikel-logo.png" alt="image logo nikel" class="img-fluid">
                                 </div>
                             </div>
                         </div>
 
-                        <!--Form login-->
+                        <!-- Login Form -->
                         <div class="row">
                             <div class="col">
                                 <form id="login-form">
 
-                                    <!--E-mail field-->
+                                    <!-- E-mail field -->
                                     <div class="mb-3">
                                         <label for="email-input" class="form-label">E-mail</label>
                                         <input type="email" class="form-control" id="email-input"
@@ -58,83 +62,86 @@
                                             login.</div>
                                     </div>
 
-                                    <!--Password field-->
+                                    <!-- Password field -->
                                     <div class="mb-3">
                                         <label for="password-input" class="form-label">Senha</label>
                                         <input type="password" class="form-control" id="password-input">
                                     </div>
 
-                                    <!--Checkbox field-->
+                                    <!-- Checkbox field -->
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="session-check">
                                         <label class="form-check-label" for="session-check">Permanecer logado.</label>
                                     </div>
 
-                                    <!--Enter button-->
+                                    <!-- Enter button -->
                                     <button type="submit" class="btn button-login">Entrar</button>
-
                                 </form>
                             </div>
                         </div>
 
-                        <!--Create account link-->
+                        <!-- Create account link -->
                         <div class="row">
                             <div class="col">
-                                <p class="text-center mt-2 form-text">Ainda não tem conta? <span
-                                        id="link-create-account" class="link-default" data-bs-toggle="modal"
-                                        data-bs-target="#register-modal">Crie uma conta
-                                        agora!</span></p>
+                                <p class="text-center mt-2 form-text">
+                                    Ainda não tem conta?
+                                    <span id="link-create-account" class="link-default" data-bs-toggle="modal"
+                                        data-bs-target="#register-modal">
+                                        Crie uma conta agora!
+                                    </span>
+                                </p>
                             </div>
                         </div>
 
-                        <!--Codai logo-->
+                        <!-- Codai logo -->
                         <div class="row">
                             <div class="col">
                                 <div class="text-center mt-5">
-                                    <img src="assets/images/codai-logo.png" alt="image logo codai" srcset="">
+                                    <img src="assets/images/codai-logo.png" alt="image logo codai">
                                 </div>
                             </div>
                         </div>
 
-                        <!--Growdev logo-->
+                        <!-- Growdev logo -->
                         <div class="row">
                             <div class="col">
                                 <div class="text-center">
-                                    <img src="assets/images/growdev-logo.png" alt="image logo growdev" srcset="">
+                                    <img src="assets/images/growdev-logo.png" alt="image logo growdev">
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <!-- Account Creation Modal-->
+        <!-- Account Creation Modal -->
         <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
 
-                    <!--Modal header-->
+                    <!-- Modal header -->
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Crie sua conta!</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
-                    <!--Modal form-->
+                    <!-- Modal form -->
                     <form id="create-form">
                         <div class="modal-body">
 
-                            <!--Modal e-mail field-->
+                            <!-- Modal e-mail field -->
                             <div class="mb-3">
                                 <label for="email-create-input" class="form-label">E-mail</label>
                                 <input type="email" class="form-control" id="email-create-input"
                                     aria-describedby="emailHelp" required>
-                                <div id="emailHelp" class="form-text">Utilize o seu e-mail para criar a
-                                    conta.</div>
+                                <div id="emailHelp" class="form-text">Utilize o seu e-mail para criar a conta.</div>
                             </div>
 
-                            <!--Modal password field-->
+                            <!-- Modal password field -->
                             <div class="mb-3">
                                 <label for="password-create-input" class="form-label">Senha</label>
                                 <input type="password" class="form-control" id="password-create-input" required>
@@ -142,32 +149,29 @@
                             </div>
                         </div>
 
-                        <!--Modal button's-->
+                        <!-- Modal footer -->
                         <div class="modal-footer">
-
-                            <!--Modal close button-->
                             <button type="button" class="btn btn-secondary button-cancel"
                                 data-bs-dismiss="modal">Close</button>
-
-                            <!--Modal create account button-->
                             <button type="submit" class="btn button-default">Criar conta</button>
-
                         </div>
+
                     </form>
                 </div>
             </div>
         </div>
     </main>
 
-    <!--Script's Bootstrap-->
+    <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
-    
-    <!--Script JS-->
+
+    <!-- Custom Script -->
     <script src="js/index.js"></script>
 </body>
 
