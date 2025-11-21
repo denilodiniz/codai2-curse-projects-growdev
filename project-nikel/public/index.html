@@ -38,21 +38,21 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <form>
+                                <form id="login-form">
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                        <label for="email-input" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email-input"
                                             aria-describedby="emailHelp">
                                         <div id="emailHelp" class="form-text">Utilize o seu e-mail para realizar o
                                             login.</div>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Senha</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <label for="password-input" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" id="password-input">
                                     </div>
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Permanecer logado.</label>
+                                        <input type="checkbox" class="form-check-input" id="session-check">
+                                        <label class="form-check-label" for="session-check">Permanecer logado.</label>
                                     </div>
                                     <button type="submit" class="btn button-login">Entrar</button>
                                 </form>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p class="text-center mt-2 form-text">Ainda não tem conta? <span class="link-default"
+                                <p class="text-center mt-2 form-text">Ainda não tem conta? <span id="link-create-account" class="link-default"
                                         data-bs-toggle="modal" data-bs-target="#register-modal">Crie uma conta
                                         agora!</span></p>
                             </div>
@@ -97,13 +97,13 @@
                             <div class="mb-3">
                                 <label for="email-create-input" class="form-label">E-mail</label>
                                 <input type="email" class="form-control" id="email-create-input"
-                                    aria-describedby="emailHelp">
+                                    aria-describedby="emailHelp" required>
                                 <div id="emailHelp" class="form-text">Utilize o seu e-mail para criar a
                                     conta.</div>
                             </div>
                             <div class="mb-3">
                                 <label for="password-create-input" class="form-label">Senha</label>
-                                <input type="password" class="form-control" id="password-create-input">
+                                <input type="password" class="form-control" id="password-create-input" required>
                                 <div id="emailHelp" class="form-text">Utilize uma senha fácil para lembrar.</div>
                             </div>
                         </div>
@@ -123,6 +123,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
