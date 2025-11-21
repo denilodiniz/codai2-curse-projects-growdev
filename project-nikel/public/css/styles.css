@@ -1,21 +1,73 @@
+/* ===== START CONFIGURATION ===== */
 * {
     margin: 0%;
     padding: 0%;
 }
 
+/* ===== TAGS HTML ===== */
 header {
+    background: #ffffff;
     border-bottom: 1px solid #bebcbc;
     padding: 5px;
-    background: #ffffff;
+}
+
+/* ===== IDs ===== */
+#app {
+    background: linear-gradient(120deg, #ffffff 44.9%, #4c79d3 45%) no-repeat fixed;
 }
 
 #login {
     background: linear-gradient(120deg, #4c79d3 44.9%, #ffffff 45%) no-repeat fixed;
 }
 
-#app {
-        background: linear-gradient(120deg, #ffffff 44.9%, #4c79d3 45%) no-repeat fixed;
+/* ===== CLASS ===== */
+.button-cancel {
+    border-radius: 10px;
+}
 
+.button-default {
+    background-color: #4c0070;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.button-default:hover,
+.button-login:hover {
+    background-color: #4c79d3;
+    color: #ffffff;
+}
+
+.button-float {
+    background-color: #4c0070;
+    border: 2px solid #4c0070;
+    border-radius: 100%;
+    bottom: 1rem;
+    color: #ffffff;
+    font-size: 35px;
+    height: 60px;
+    padding: 0% !important;
+    position: fixed;
+    right: 2rem;
+    width: 60px;
+}
+
+.button-float:hover {
+    background-color: #ffffff;
+    border: 2px solid #4c79d3;
+    color: #4c79d3;
+}
+
+.button-login {
+    background-color: #4c0070;
+    border-radius: 10px;
+    color: #ffffff;
+    margin: 0 25%;
+    width: 50%;
+}
+
+.coins {
+    bottom: 100px;
+    position: absolute;
 }
 
 .color-primary {
@@ -36,61 +88,6 @@ header {
     background-color: #ffffff;
     border-radius: 20px 20px 0px 0px;
     padding: 20px 0px 0px 0px;
-
-}
-
-.text-login {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.coins {
-    position: absolute;
-    bottom: 100px;
-}
-
-.button-login {
-    border-radius: 10px;
-    background-color: #4c0070;
-    color: #ffffff;
-    width: 50%;
-    margin: 0 25%;   
-}
-
-.button-cancel {
-    border-radius: 10px;
-}
-
-.button-default {
-    border-radius: 10px;
-    background-color: #4c0070;
-    color: #ffffff;
-}
-
-.button-login:hover, .button-default:hover {
-    background-color: #4c79d3;
-    color: #ffffff;
-}
-
-.button-float {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    padding: 0% !important;
-    bottom: 1rem;
-    right: 2rem;
-    font-size: 35px;
-    border: 2px solid #4c0070;
-    background-color: #4c0070;
-    color: #ffffff;
-}
-
-.button-float:hover {
-    border: 2px solid #4c79d3;
-    background-color: #ffffff;
-    color: #4c79d3;
 }
 
 .link-default {
@@ -108,4 +105,10 @@ header {
 
 .menu {
     margin-right: 20px;
+}
+
+.text-login {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
 }
